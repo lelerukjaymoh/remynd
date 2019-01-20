@@ -51,14 +51,20 @@
       <!-- modal content -->
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon1"><i class="fas fa-edit"></i></span>
-        <input type="email" class="remind-input form-control" id="exampleInputEmail" placeholder="Save for later ..."><button type="button" class="btn btn-outline-primary">Save</button>
+        <input type="email" class="remind-input form-control" id="exampleInputEmail" placeholder="Save for later ..."  onfocus="focused()"><button type="button" id="savebutton" class="btn btn-outline-primary">Save</button>
       </div>
 
     </div>
   </div>
 </div>
 
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
+    <script>
+     
+         document.getElementById("savebutton").style.color="red";
+     
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
