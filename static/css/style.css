@@ -36,3 +36,8 @@
 .check{
   margin: 0px 15px 0px 10px
 }
+
+.focused{
+  color: blue;
+  background-color: white;
+}
