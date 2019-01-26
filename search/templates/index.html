@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- <div class="card">
-  <div class="card-body">
-    <input class="check form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-    This is some text within a card body.
-    <button type="button" class="card-button btn btn-primary">Primary</button>
-  </div>
-</div> -->
 
-{{ searches }}
+	{% for search in searchs %}
+
+		<div class="card" style="width: 100%; margin-bottom: 5px">
+		  <div class="card-body" style="margin: 0px 5px 5px 5px">
+		    <p class="card-text" style="padding: 0px 0px 0px 5px; font-weight: bold;">{{ search }}
+		    <a href="#" style="float: right;" class="btn btn-primary">Search</a></p>
+		  </div>
+		</div>
+
+	{% endfor %}
 
 {% endblock %}
